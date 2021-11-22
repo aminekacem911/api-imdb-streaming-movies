@@ -1,10 +1,10 @@
 # PHP IMDB API
 
-[![Latest Stable Version](https://poser.pugx.org/hmerritt/imdb-api/v/stable)](https://packagist.org/packages/hmerritt/imdb-api)
-[![Build Status](https://travis-ci.org/hmerritt/php-imdb-api.svg?branch=master)](https://travis-ci.org/hmerritt/php-imdb-api)
-[![Coverage Status](https://coveralls.io/repos/github/hmerritt/php-imdb-api/badge.svg?branch=master)](https://coveralls.io/github/hmerritt/php-imdb-api?branch=master)
+[![Latest Stable Version](https://poser.pugx.org/zvenn/imdb-api-streaming-movies/v/stable)](https://packagist.org/packages/zvenn/imdb-api-streaming-movies)
+[![Build Status](https://travis-ci.org/zvenn/php-imdb-api-streaming-movies.svg?branch=master)](https://travis-ci.org/zvenn/php-imdb-api-streaming-movies)
+[![Coverage Status](https://coveralls.io/repos/github/zvenn/php-imdb-api-streaming-movies/badge.svg?branch=master)](https://coveralls.io/github/zvenn/php-imdb-api-streaming-movies?branch=master)
 
-PHP IMDB-API that can fetch film data and search results.
+PHP imdb-api-streaming-movies that can fetch film data and search results.
 
 
 
@@ -13,7 +13,7 @@ PHP IMDB-API that can fetch film data and search results.
 Install the latest version using [composer](https://getcomposer.org/).
 
 ```
-$ composer require hmerritt/imdb-api
+$ composer require zvenn/imdb-api-streaming-movies
 ```
 
 
@@ -23,7 +23,7 @@ $ composer require hmerritt/imdb-api
 ```php
 // Assuming you installed from Composer:
 require "vendor/autoload.php";
-use hmerritt\Imdb;
+use zvenn\Imdb;
 
 $imdb = new Imdb;
 
@@ -125,3 +125,4 @@ Search IMDB to return an array of films, people and companies
 
 - [php-html-parser](https://github.com/paquettg/php-html-parser)
 - [filebase](https://github.com/tmarois/Filebase)
+# imdb-api-streaming-movies
