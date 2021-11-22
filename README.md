@@ -4,8 +4,11 @@
 [![Build Status](https://travis-ci.org/zvenn/php-imdb-api-streaming-movies.svg?branch=master)](https://travis-ci.org/zvenn/php-imdb-api-streaming-movies)
 [![Coverage Status](https://coveralls.io/repos/github/zvenn/php-imdb-api-streaming-movies/badge.svg?branch=master)](https://coveralls.io/github/zvenn/php-imdb-api-streaming-movies?branch=master)
 
-PHP imdb-api-streaming-movies that can fetch film data and search results.
-...
+PHP imdb-api-streaming-movies that can fetch film data and search results. <br />
+
+
+
+
 forked from hmerritt/imdb-api package with adding some custom functionalities
 
 
