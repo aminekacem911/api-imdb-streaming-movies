@@ -5,6 +5,8 @@
 [![Coverage Status](https://coveralls.io/repos/github/zvenn/php-imdb-api-streaming-movies/badge.svg?branch=master)](https://coveralls.io/github/zvenn/php-imdb-api-streaming-movies?branch=master)
 
 PHP imdb-api-streaming-movies that can fetch film data and search results.
+...
+forked from hmerritt/imdb-api package with adding some custom functionalities
 
 
 
@@ -96,6 +98,7 @@ $imdb->film("Apocalypse");
     - actor id
     - image
 - Technical Specs
+- Movies
 ```
 
 
