@@ -13,7 +13,7 @@ PHP imdb-api-streaming-movies that can fetch film data and search results.
 Install the latest version using [composer](https://getcomposer.org/).
 
 ```
-$ composer require zvenn/imdb-api-streaming-movies
+$ composer require zvenn/api-imdb-streaming-movies
 ```
 
 
