@@ -116,12 +116,19 @@ class Imdb
       $response->add("technical_specs", []);
     }
 
+    //load movies
+    $links = $this->getmovieslink($htmlPieces->get($page, "title"));
+
+    if ($links) {
+      $response->add("movies", $links);
+    } else {
+      $response->add("movies", []);
+    }
     //  If caching is enabled
     if ($options["cache"]) {
       //  Add result to the cache
       $cache->add($filmId, $response->return());
     }
-
     //  Return the response $store
     return $response->return();
   }
@@ -160,6 +167,17 @@ class Imdb
     );
 
     //time for search fillm via api daily movies
+
+    //  Add all search data to response $store
+    $response->add("titles", $htmlPieces->get($page, "titles"));
+    $response->add("names", $htmlPieces->get($page, "names"));
+    $response->add("companies", $htmlPieces->get($page, "companies"));
+
+    return $response->return();
+  }
+  public function getmovieslink($cle)
+  {
+    $search_url = urlencode(urldecode($cle));
     //get the basic href
 
     $url = "https://www.dailymotion.com/embed/video/";
@@ -168,7 +186,7 @@ class Imdb
     $curl = curl_init();
 
     curl_setopt_array($curl, [
-      CURLOPT_URL => "https://api.dailymotion.com/videos?search=$search_url&fields=id&country=us",
+      CURLOPT_URL => "https://api.dailymotion.com/videos?search=$search_url&fields=id&country=us&limit=100",
       CURLOPT_RETURNTRANSFER => true,
       CURLOPT_ENCODING => "",
       CURLOPT_MAXREDIRS => 10,
@@ -177,26 +195,20 @@ class Imdb
       CURLOPT_CUSTOMREQUEST => "GET",
       CURLOPT_POSTFIELDS => "",
       CURLOPT_HTTPHEADER => [
-        "Content-Type: application/json",
         "Accept: application/json",
         "User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.95 Safari/53",
       ],
     ]);
 
-    $data = curl_exec($curl);
-
+    $data = json_decode(curl_exec($curl));
+    //dd(gettype($data));
     $stack = [];
     foreach ($data->list as $val) {
+      //dd($val);
       $full = $url . $val->id;
 
       array_push($stack, $full);
     }
-    $response->add("movies", $stack);
-    //  Add all search data to response $store
-    $response->add("titles", $htmlPieces->get($page, "titles"));
-    $response->add("names", $htmlPieces->get($page, "names"));
-    $response->add("companies", $htmlPieces->get($page, "companies"));
-
-    return $response->return();
+    return $stack;
   }
 }
