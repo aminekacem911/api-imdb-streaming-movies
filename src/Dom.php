@@ -1,12 +1,12 @@
 <?php
-namespace hmerritt;
+namespace zvenn;
 
 /**
 *  Class Dom
 *
 *
-* @package hmerritt/imdb-api
-* @author Harry Merritt
+* @package zvenn/imdb-api-streaming-movies
+* @author Amine kacem
 */
 class Dom
 {

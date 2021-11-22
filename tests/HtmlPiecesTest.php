@@ -1,7 +1,7 @@
 <?php
 
 use PHPUnit\Framework\TestCase;
-use hmerritt\HtmlPieces;
+use zvenn\HtmlPieces;
 
 class HtmlPiecesTest extends TestCase {
 

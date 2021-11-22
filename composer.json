@@ -1,17 +1,17 @@
 {
-    "name": "hmerritt/imdb-api",
-    "description": "IMDB API that can fetch film data and search results",
-    "keywords": ["imdb", "api", "film", "movie", "search"],
+    "name": "zvenn/api-imdb-streaming-movies",
+    "description": "IMDB API that can fetch film data and search results also streaming movies ",
+    "keywords": ["imdb", "api", "film", "movie", "search","streaming"],
     "license": "Apache-2.0",
     "authors": [
         {
-            "name": "Harry Merritt",
-            "email": "harry@merritt.es"
+            "name": "amine kacem",
+            "email": "amine.kacem1337@gmail.com"
         }
     ],
     "type": "project",
     "require": {
-		"php": ">=7.1",
+		"php": "^7.3|^8.0",
         "paquettg/php-html-parser": "^2.1",
         "tmarois/filebase": "^1.0"
     },
@@ -24,7 +24,7 @@
 	},
     "autoload": {
         "psr-4": {
-            "hmerritt\\": "src/"
+            "zvenn\\": "src/"
         }
     }
 }

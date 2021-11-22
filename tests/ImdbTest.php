@@ -1,9 +1,9 @@
 <?php
 
 use PHPUnit\Framework\TestCase;
-use hmerritt\Imdb;
-use hmerritt\Cache;
-use hmerritt\Response;
+use zvenn\Imdb;
+use zvenn\Cache;
+use zvenn\Response;
 
 class ImdbTest extends TestCase {
 

@@ -1,12 +1,12 @@
 <?php
-namespace hmerritt;
+namespace zvenn;
 
 /**
 *  Class Cache
 *
 *
-* @package hmerritt/imdb-api
-* @author Harry Merritt
+* @package zvenn/imdb-api-streaming-movies
+* @author Amine kacem
 */
 class Cache
 {

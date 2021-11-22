@@ -1,7 +1,7 @@
 <?php
 
 use PHPUnit\Framework\TestCase;
-use hmerritt\Response;
+use zvenn\Response;
 
 class ResponseTest extends TestCase {
 
