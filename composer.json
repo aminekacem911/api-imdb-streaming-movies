@@ -1,7 +1,7 @@
 {
     "name": "zvenn/api-imdb-streaming-movies",
     "description": "IMDB API that can fetch film data and search results also streaming movies ",
-    "keywords": ["imdb", "api", "film", "movie", "search","streaming"],
+    "keywords": ["netflix","daily motion","imdb", "api", "film", "movie", "search","streaming","movies", "imdb.com", "omdbapi.com","tv", "tv show"],
     "license": "Apache-2.0",
     "authors": [
         {
